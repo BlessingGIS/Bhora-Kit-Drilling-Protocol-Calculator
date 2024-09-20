@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SI-Bhora kit Drilling Protocol Calculation Tool</title>
+  <link rel="stylesheet" href="styles.css">  
+</head>
+<body>
+<!-- Logo Image -->
+<div id="logoContainer">
+  <img src="SI_Logo.png" alt="Logo" id="logo">
+</div>
+<h1>External Hex Drilling Protocol Calculation Tool</h1>
+  <!-- Italicized Note -->
+  <p style="font-style: italic;">Bhora kit - The power in simplicity</p>
+<!-- Add this div for displaying the label -->
+<div id="imageLabel" style="font-weight: bold; margin-top: 20px;"></div>
+  <!-- Drop-down 1: Same options as previous project -->   
+  <label for="value1">Select Implant:</label>
+  <select id="value1" name="value1" required>
+    <option value="">--This Selection Automatically Determines Diameter and Length--</option>
+    <option value="IP-8.5">IP-8.5</option>
+    <option value="IP-10">IP-10</option>
+    <option value="IP-11.5">IP-11.5</option>
+    <option value="IP-13">IP-13</option>
+    <option value="IP-15">IP-15</option>
+    <option value="IBNT-8.5">IBNT-8.5</option>
+    <option value="IBNT-10">IBNT-10</option>
+    <option value="IBNT-11.5">IBNT-11.5</option>
+    <option value="IBNT-13">IBNT-13</option>
+    <option value="IBNT-15">IBNT-15</option>
+    <option value="IBT-8.5">IBT-8.5</option>
+    <option value="IBT-10">IBT-10</option>
+    <option value="IBT-11.5">IBT-11.5</option>
+    <option value="IBT-13">IBT-13</option>
+    <option value="IBT-15">IBT-15</option>
+    <option value="BAT-8.5">BAT-8.5</option>
+    <option value="BAT-10">BAT-10</option>
+    <option value="BAT-11.5">BAT-11.5</option>
+    <option value="BAT-13">BAT-13</option>
+    <option value="BAT-15">BAT-15</option>
+  </select><br><br>
+  <!-- Drop-down 2: Numerical values -->
+  <label for="value2">Implant Diameter:</label>
+  <select id="value2" name="value2" required>
+    <option value="">--Choose Implant Diameter Based on selected Implant above--</option>
+    <option value="3">3</option>
+    <option value="3.25">3.25</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+  </select><br><br>
+  <input type="button" value="Calculate Drilling Protocol" onclick="applyConditions()">
+  <!-- Images Section -->
+  <div id="imagesContainer">
+    <!-- Default image that always shows until condition is met -->
+    <img id="Kit" src="Kit.PNG" alt="Default Image" style="display: block;">
+  <!-- Images Section (Initially Hidden) -->
+  <div id="imagesContainer">
+    <img id="IP-8.5 Regular" src="IP-8.5 Soft.PNG" alt="IP-8.5 Regular" style="display: none;">
+    <img id="IP-10 Regular" src="IP-10 Soft.PNG" alt="IP-10 Regular" style="display: none;">   
+    <img id="IP-11.5 Regular" src="IP-11.5 Soft.PNG" alt="IP-11.5 Regular" style="display: none;">
+    <img id="IP-13 Regular" src="IP-13 Soft.PNG" alt="IP-13 Regular" style="display: none;">
+    <img id="IP-15 Regular" src="IP-15 Soft.PNG" alt="IP-15 Regular" style="display: none;">
+    <img id="IBNT-8.5 Regular" src="IBN-8.5 Soft.PNG" alt="IBNT-8.5 Regular" style="display: none;">
+    <img id="IBNT-10 Regular" src="IBN-10 Soft.PNG" alt="IBNT-10 Regular" style="display: none;">
+    <img id="IBNT-11.5 Regular" src="IBN-11.5 Soft.PNG" alt="IBNT-11.5 Regular" style="display: none;">
+    <img id="IBNT-13 Regular" src="IBN-13 Soft.PNG" alt="IBNT-13 Regular" style="display: none;"> 
+    <img id="IBNT-15 Regular" src="IBN-15 Soft.PNG" alt="IBNT-15 Regular" style="display: none;">     
+    <img id="IBT-8.5 Regular" src="IBT-8.5 Soft.PNG" alt="IBT-8.5 Regular" style="display: none;">
+    <img id="IBT-10 Regular" src="IBT-10 Soft.PNG" alt="IBT-10 Regular" style="display: none;">        
+    <img id="IBT-11.5 Regular" src="IBT-11.5 Soft.PNG" alt="IBT-11.5 Regular" style="display: none;">
+    <img id="IBT-13 Regular" src="IBT-13 Soft.PNG" alt="IBT-13 Regular" style="display: none;">
+    <img id="IBT-15 Regular" src="IBT-15 Soft.PNG" alt="IBT-15 Regular" style="display: none;">
+    <img id="BAT-8.5 Regular" src="BAT-8.5 Soft.PNG" alt="BAT-8.5 Regular" style="display: none;">
+    <img id="BAT-10 Regular" src="BAT-10 Soft.PNG" alt="BAT-10 Regular" style="display: none;">
+    <img id="BAT-11.5 Regular" src="BAT-11.5 Soft.PNG" alt="BAT-11.5 Regular" style="display: none;">
+    <img id="BAT-13 Regular" src="BAT-13 Soft.PNG" alt="BAT-13 Regular" style="display: none;">
+    <img id="BAT-15 Regular" src="BAT-15 Soft.PNG" alt="BAT-15 Regular" style="display: none;">                                                           
+  </div>
+  <script src="script.js"></script>  
+</body>
+</html>
