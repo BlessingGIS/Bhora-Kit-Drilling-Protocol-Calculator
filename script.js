@@ -21,7 +21,8 @@ function applyConditions() {
       document.getElementById("Kit").style.display = "block";
       return;
   }
-
+  // Error handling - if the combination doesn't match any condition
+  let validCombination = true;
   // Conditions based on implant system, diameter, and implant
   if (implant === "IP-8.5" && diameter === "3(IP)") {
       document.getElementById("IP-8.5 Regular").style.display = "block";
@@ -86,7 +87,11 @@ function applyConditions() {
   } 
   // Add other conditions as per your requirement
   else {
-      alert("Error: You have Selected Invalid Combinations-RECHECK.");
+    validCombination = false;
+  }
+  // Error handling if no valid combinations are found
+  if (!validCombination) {
+    alert("Error: You have selected invalid combinations. Please check the selections.");
   }
 }
 
@@ -203,7 +208,6 @@ function autoSelectImplant() {
       implantDropdown.value = "BAT-13";      
   } else if (diameter === "5(BA)" && length === "15") {
       implantDropdown.value = "BAT-15";
-}          
-  
+}            
   // Add more conditions for auto-selection as needed
 }
