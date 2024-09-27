@@ -3,14 +3,73 @@ body {
   padding: 20px;
 }
 
-label {
-  margin-right: 10px;
+/* Style for the dropdown container */
+.dropdown-container {
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap if necessary */
+  align-items: center; /* Vertically center all elements */
+  gap: 10px; /* Maintain space between dropdowns */
+  max-width: 100%; /* Use the full width of the page */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
 }
 
-#imagesContainer img {
-  max-width: 100%;
-  margin-top: 20px;
-  display: none; /* Initially hidden */
+/* Flex layout for label and dropdown to be inline */
+.dropdown-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0; /* No vertical space between dropdowns */
+}
+
+/* Labels aligned with the dropdowns */
+.dropdown-group label {
+  width: 100%;
+  margin-right: 10px;
+  margin-bottom: 3px; /* A bit of space below the label */
+}
+
+/* Dropdown style */
+select {
+  width: 100%; /* Ensure dropdown takes full available width */
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  height: 30px;
+}
+
+/* Ensure all dropdowns are the same width and align horizontally */
+.dropdown-container .dropdown-group {
+  flex: 1 1 auto; /* Make the dropdowns take equal space */
+  min-width: 200px; /* Minimum width for dropdowns to prevent collapsing */
+}
+
+/* Style the button to align with dropdowns */
+input[type="button"] {
+  background-color: #0f1cdd;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  flex-shrink: 0; /* Prevent the button from shrinking */
+  height: 46px; /* Same height as dropdowns */
+}
+
+input[type="button"]:hover {
+  background-color: #0d1aa6;
+}
+
+/* Style for hidden dropdowns to prevent shifting */
+select[style*="visibility: hidden"] {
+  width: 0;
+  height: 0;
+  padding: 0;
+  border: none;
 }
 
 /* Style the logo image */
@@ -22,3 +81,11 @@ label {
 h1 {
   color: #0f1cdd;
 }
+
+/* Ensure images take full width */
+#imagesContainer img {
+  max-width: 100%;
+  margin-top: 20px;
+  display: none;
+}
+

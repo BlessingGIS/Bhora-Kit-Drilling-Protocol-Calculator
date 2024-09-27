@@ -11,15 +11,73 @@
 <div id="logoContainer">
   <img src="SI_Logo.png" alt="Logo" id="logo">
 </div>
-<h1>External Hex Drilling Protocol Calculation Tool</h1>
-  <!-- Italicized Note -->
-  <p style="font-style: italic;">Bhora kit - The power in simplicity</p>
+<h1>SI-Bhora kit Drilling Protocol Calculation Tool</h1>
 <!-- Add this div for displaying the label -->
 <div id="imageLabel" style="font-weight: bold; margin-top: 20px;"></div>
-  <!-- Drop-down 1: Same options as previous project -->   
-  <label for="value1">Select Implant:</label>
-  <select id="value1" name="value1" required>
-    <option value="">--Select Implant To Be Placed--</option>
+  <!-- Drop-down 1: Same options as previous project -->
+<!-- Wrap all dropdowns and labels in a flex container -->
+<div class="dropdown-container">
+  <!-- Implant System Dropdown -->
+  <div class="dropdown-group">
+    <label for="value2">Implant System:</label>
+    <select id="value2" name="value2" required onchange="filterDiameters()">
+    <option value="">----</option>
+    <option value="Deep Conical">Deep Conical</option>
+    <option value="External Hex">External Hex</option>
+    <option value="Internal Hex">Internal Hex</option>
+    <option value="Internal Octagon">Internal Octagon</option>
+    <option value="Single Platform">Single Platform</option>
+    <option value="Tri-Nex">Tri-Nex</option>
+  </select>
+</div>
+  <!-- Implant Diameter Dropdown -->
+  <div class="dropdown-group">
+    <label for="value3">Implant Diameter:</label>
+    <select id="value3" name="value3" required style="visibility: hidden;" onchange="autoSelectImplant()">
+    <option value="">----</option>
+    <option value="3(IP)">3(IP)</option>
+    <option value="3.25(IBN)">3.25(IBN)</option>
+    <option value="4(IB)">4(IB)</option>
+    <option value="5(BA)">5(BA)</option>
+    <option value="3(DC3)">3(DC3)</option>
+    <option value="3.5(DC4)">3.5(DC4)</option>
+    <option value="4(DC4)">4(DC4)</option>
+    <option value="5(DC5)">5(DC5)</option>
+    <option value="3.3(3M)">3.3(3M)</option>
+    <option value="3.75(M)">3.75(M)</option>
+    <option value="4(M)">4(M)</option>        
+    <option value="4.2(M)">4.2(M)</option>
+    <option value="5(M-P45)">5(M-P45)</option>
+    <option value="3.5(SP)">3.5(SP)</option>
+    <option value="4(SP)">4(SP)</option>
+    <option value="5(SP)">5(SP)</option>
+    <option value="3.3(ITC3)">3.3(ITC3)</option>
+    <option value="4(ITT4)">4(ITT4)</option>
+    <option value="5(ITT5)">5(ITT5)</option>
+    <option value="3.5(L-35)">3.5(L-35)</option>
+    <option value="4.3(L-43)">4.3(L-43)</option>
+    <option value="5(L-50)">5(L-50)</option>
+  </select>
+</div>       
+<div class="dropdown-group">
+  <label for="value4">Implant Length:</label>
+  <select id="value4" name="value4" required onchange="autoSelectImplant()">
+    <option value="">----</option>
+    <option value="8">8</option>
+    <option value="8.5">8.5</option>    
+    <option value="9">9</option>
+    <option value="10">10</option>
+    <option value="11.5">11.5</option>
+    <option value="13">13</option>
+    <option value="15">15</option>                          
+  </select>
+</div>       
+  <!-- Implant Length Dropdown -->
+  <!-- Implant Selected Dropdown -->
+  <div class="dropdown-group">
+    <label for="value1">Implant Selected:</label>
+    <select id="value1" name="value1" required disabled>  
+    <option value="">--Auto Selected--</option>
     <option value="IP-8.5">IP-8.5</option>
     <option value="IP-10">IP-10</option>
     <option value="IP-11.5">IP-11.5</option>
@@ -40,17 +98,10 @@
     <option value="BAT-11.5">BAT-11.5</option>
     <option value="BAT-13">BAT-13</option>
     <option value="BAT-15">BAT-15</option>
-  </select><br><br>
-  <!-- Drop-down 2: Numerical values -->
-  <label for="value2">Implant Diameter:</label>
-  <select id="value2" name="value2" required>
-    <option value="">--Diameter MUST Correspond To Implant Selected Above--</option>
-    <option value="3">3</option>
-    <option value="3.25">3.25</option>
-    <option value="4">4</option>
-    <option value="5">5</option>
-  </select><br><br>
+  </select>
+</div>
   <input type="button" value="Calculate Drilling Protocol" onclick="applyConditions()">
+</div>
   <!-- Images Section -->
   <div id="imagesContainer">
     <!-- Default image that always shows until condition is met -->
