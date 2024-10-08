@@ -79,7 +79,13 @@ h1 {
   color: #0f1cdd;
   text-align: center;
 }
-
+#imageLabel {
+  text-align: center;
+  color: #2200ffed; /* Change color to red, or any preferred color */
+  font-size: 1.1em; /* Adjust size if needed */
+  margin-top: 10px; /* Adds space above the label */
+  margin-bottom: 10px; /* Adds space below the label */
+}
 #imagesContainer {
   display: flex;
   align-items: center;
