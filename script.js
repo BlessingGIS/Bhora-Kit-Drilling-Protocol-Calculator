@@ -26,19 +26,19 @@ function applyConditions() {
   // Conditions based on implant system, diameter, and implant
   if (implant === "IP-8.5" && diameter === "3(IP)") {
       document.getElementById("IP-8.5 Regular").style.display = "block";
-      imageLabel.innerHTML = `Drilling protocol for: ${implant} - Drill Marked in RED SQUARE is OPTIONAL and used only to Widen Apex`;
+      imageLabel.innerHTML = `Drilling protocol for: ${implant} - Drill Marked in YELLOW TRIANGLE is only used in dense bone`;
   } else if (implant === "IP-10" && diameter === "3(IP)") {
       document.getElementById("IP-10 Regular").style.display = "block";
-      imageLabel.innerHTML = `Drilling protocol for: ${implant} - Drill Marked in RED SQUARE is OPTIONAL and used only to Widen Apex`;
+      imageLabel.innerHTML = `Drilling protocol for: ${implant} - Drill Marked in YELLOW TRIANGLE is only used in dense bone`;
   } else if (implant === "IP-11.5" && diameter === "3(IP)") {
       document.getElementById("IP-11.5 Regular").style.display = "block";
-      imageLabel.innerHTML = `Drilling protocol for: ${implant} - Drill Marked in RED SQUARE is OPTIONAL and used only to Widen Apex`;
+      imageLabel.innerHTML = `Drilling protocol for: ${implant} - Drill Marked in YELLOW TRIANGLE is only used in dense bone`;
   } else if (implant === "IP-13" && diameter === "3(IP)") {
         document.getElementById("IP-13 Regular").style.display = "block";
-        imageLabel.innerHTML = `Drilling protocol for: ${implant} - Drill Marked in RED SQUARE is OPTIONAL and used only to Widen Apex`;
+        imageLabel.innerHTML = `Drilling protocol for: ${implant} - Drill Marked in YELLOW TRIANGLE is only used in dense bone`;
   } else if (implant === "IP-15" && diameter === "3(IP)") {
         document.getElementById("IP-15 Regular").style.display = "block";
-        imageLabel.innerHTML = `Drilling protocol for: ${implant} - Drill Marked in RED SQUARE is OPTIONAL and used only to Widen Apex`;
+        imageLabel.innerHTML = `Drilling protocol for: ${implant} - Drill Marked in YELLOW TRIANGLE is only used in dense bone`;
   } else if (implant === "IBNT-8.5" && diameter === "3.25(IBN)") {
         document.getElementById("IBNT-8.5 Regular").style.display = "block";
         imageLabel.innerHTML = `Drilling protocol for: ${implant} - Drill Marked in RED SQUARE is OPTIONAL and used only to Widen Apex`;
