@@ -26,64 +26,64 @@ function applyConditions() {
   // Conditions based on implant system, diameter, and implant
   if (implant === "IP-8.5" && diameter === "3(IP)") {
       document.getElementById("IP-8.5 Regular").style.display = "block";
-      imageLabel.innerHTML = `Drilling protocol for: ${implant} - Drill Marked in RED to be used only if bone is hard`;
+      imageLabel.innerHTML = `Drilling protocol for: ${implant} - Drill Marked in RED SQUARE is OPTIONAL and used only to Widen Apex`;
   } else if (implant === "IP-10" && diameter === "3(IP)") {
       document.getElementById("IP-10 Regular").style.display = "block";
-      imageLabel.innerHTML = `Drilling protocol for: ${implant} - Drill Marked in RED to be used only if bone is hard`;
+      imageLabel.innerHTML = `Drilling protocol for: ${implant} - Drill Marked in RED SQUARE is OPTIONAL and used only to Widen Apex`;
   } else if (implant === "IP-11.5" && diameter === "3(IP)") {
       document.getElementById("IP-11.5 Regular").style.display = "block";
-      imageLabel.innerHTML = `Drilling protocol for: ${implant} - Drill Marked in RED to be used only if bone is hard`;
+      imageLabel.innerHTML = `Drilling protocol for: ${implant} - Drill Marked in RED SQUARE is OPTIONAL and used only to Widen Apex`;
   } else if (implant === "IP-13" && diameter === "3(IP)") {
         document.getElementById("IP-13 Regular").style.display = "block";
-        imageLabel.innerHTML = `Drilling protocol for: ${implant} - Drill Marked in RED to be used only if bone is hard`;
+        imageLabel.innerHTML = `Drilling protocol for: ${implant} - Drill Marked in RED SQUARE is OPTIONAL and used only to Widen Apex`;
   } else if (implant === "IP-15" && diameter === "3(IP)") {
         document.getElementById("IP-15 Regular").style.display = "block";
-        imageLabel.innerHTML = `Drilling protocol for: ${implant} - Drill Marked in RED to be used only if bone is hard`;
+        imageLabel.innerHTML = `Drilling protocol for: ${implant} - Drill Marked in RED SQUARE is OPTIONAL and used only to Widen Apex`;
   } else if (implant === "IBNT-8.5" && diameter === "3.25(IBN)") {
         document.getElementById("IBNT-8.5 Regular").style.display = "block";
-        imageLabel.innerHTML = `Drilling protocol for: ${implant} - Drill Marked in RED to be used only if bone is hard`;
+        imageLabel.innerHTML = `Drilling protocol for: ${implant} - Drill Marked in RED SQUARE is OPTIONAL and used only to Widen Apex`;
   } else if (implant === "IBNT-10" && diameter === "3.25(IBN)") {
         document.getElementById("IBNT-10 Regular").style.display = "block";
-        imageLabel.innerHTML = `Drilling protocol for: ${implant} - Drill Marked in RED to be used only if bone is hard`;
+        imageLabel.innerHTML = `Drilling protocol for: ${implant} - Drill Marked in RED SQUARE is OPTIONAL and used only to Widen Apex`;
   } else if (implant === "IBNT-11.5" && diameter === "3.25(IBN)") {
           document.getElementById("IBNT-11.5 Regular").style.display = "block";
-          imageLabel.innerHTML = `Drilling protocol for: ${implant} - Drill Marked in RED to be used only if bone is hard`;
+          imageLabel.innerHTML = `Drilling protocol for: ${implant} - Drill Marked in RED SQUARE is OPTIONAL and used only to Widen Apex`;
   } else if (implant === "IBNT-13" && diameter === "3.25(IBN)") {
           document.getElementById("IBNT-13 Regular").style.display = "block";
-          imageLabel.innerHTML = `Drilling protocol for: ${implant} - Drill Marked in RED to be used only if bone is hard`;
+          imageLabel.innerHTML = `Drilling protocol for: ${implant} - Drill Marked in RED SQUARE is OPTIONAL and used only to Widen Apex`;
   } else if (implant === "IBNT-15" && diameter === "3.25(IBN)") {
             document.getElementById("IBNT-15 Regular").style.display = "block";
-            imageLabel.innerHTML = `Drilling protocol for: ${implant} - Drill Marked in RED to be used only if bone is hard`;
+            imageLabel.innerHTML = `Drilling protocol for: ${implant} - Drill Marked in RED SQUARE is OPTIONAL and used only to Widen Apex`;
   } else if (implant === "IBT-8.5" && diameter === "4(IB)") {
             document.getElementById("IBT-8.5 Regular").style.display = "block";
-            imageLabel.innerHTML = `Drilling protocol for: ${implant} - Drill Marked in RED to be used only if bone is hard`;
+            imageLabel.innerHTML = `Drilling protocol for: ${implant} - Drill Marked in RED SQUARE is OPTIONAL and used only to Widen Apex`;
   } else if (implant === "IBT-10" && diameter === "4(IB)") {
               document.getElementById("IBT-10 Regular").style.display = "block";
-              imageLabel.innerHTML = `Drilling protocol for: ${implant} - Drill Marked in RED to be used only if bone is hard`;
+              imageLabel.innerHTML = `Drilling protocol for: ${implant} - Drill Marked in RED SQUARE is OPTIONAL and used only to Widen Apex`;
   } else if (implant === "IBT-11.5" && diameter === "4(IB)") {
               document.getElementById("IBT-11.5 Regular").style.display = "block";
-              imageLabel.innerHTML = `Drilling protocol for: ${implant} - Drill Marked in RED to be used only if bone is hard`;
+              imageLabel.innerHTML = `Drilling protocol for: ${implant} - Drill Marked in RED SQUARE is OPTIONAL and used only to Widen Apex`;
   } else if (implant === "IBT-13" && diameter === "4(IB)") {
               document.getElementById("IBT-13 Regular").style.display = "block";
-              imageLabel.innerHTML = `Drilling protocol for: ${implant} - Drill Marked in RED to be used only if bone is hard`;
+              imageLabel.innerHTML = `Drilling protocol for: ${implant} - Drill Marked in RED SQUARE is OPTIONAL and used only to Widen Apex`;
   } else if (implant === "IBT-15" && diameter === "4(IB)") {
               document.getElementById("IBT-15 Regular").style.display = "block";
-              imageLabel.innerHTML = `Drilling protocol for: ${implant} - Drill Marked in RED to be used only if bone is hard`;
+              imageLabel.innerHTML = `Drilling protocol for: ${implant} - Drill Marked in RED SQUARE is OPTIONAL and used only to Widen Apex`;
   } else if (implant === "BAT-8.5" && diameter === "5(BA)") {
                 document.getElementById("BAT-8.5 Regular").style.display = "block";
-                imageLabel.innerHTML = `Drilling protocol for: ${implant} - Drill Marked in RED to be used only if bone is hard`;
+                imageLabel.innerHTML = `Drilling protocol for: ${implant} - Drill Marked in RED SQUARE is OPTIONAL and used only to Widen Apex`;
   } else if (implant === "BAT-10" && diameter === "5(BA)") {
                 document.getElementById("BAT-10 Regular").style.display = "block";
-                imageLabel.innerHTML = `Drilling protocol for: ${implant} - Drill Marked in RED to be used only if bone is hard`;                              
+                imageLabel.innerHTML = `Drilling protocol for: ${implant} - Drill Marked in RED SQUARE is OPTIONAL and used only to Widen Apex`;                              
   } else if (implant === "BAT-11.5" && diameter === "5(BA)") {
                 document.getElementById("BAT-11.5 Regular").style.display = "block";
-                imageLabel.innerHTML = `Drilling protocol for: ${implant} - Drill Marked in RED to be used only if bone is hard`;
+                imageLabel.innerHTML = `Drilling protocol for: ${implant} - Drill Marked in RED SQUARE is OPTIONAL and used only to Widen Apex`;
   } else if (implant === "BAT-13" && diameter === "5(BA)") {
                 document.getElementById("BAT-13 Regular").style.display = "block";
-                imageLabel.innerHTML = `Drilling protocol for: ${implant} - Drill Marked in RED to be used only if bone is hard`;
+                imageLabel.innerHTML = `Drilling protocol for: ${implant} - Drill Marked in RED SQUARE is OPTIONAL and used only to Widen Apex`;
   } else if (implant === "BAT-15" && diameter === "5(BA)") {
                   document.getElementById("BAT-15 Regular").style.display = "block";
-                  imageLabel.innerHTML = `Drilling protocol for: ${implant} - Drill Marked in RED to be used only if bone is hard`;
+                  imageLabel.innerHTML = `Drilling protocol for: ${implant} - Drill Marked in RED SQUARE is OPTIONAL and used only to Widen Apex`;
   } 
   // Add other conditions as per your requirement
   else {
