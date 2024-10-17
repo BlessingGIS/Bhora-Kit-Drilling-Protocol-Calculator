@@ -29,19 +29,22 @@ body {
 .dropdown-group label {
   width: 100%;
   margin-right: 10px;
-  margin-bottom: 3px;
+  margin-bottom: 0px;
 }
 
+/* Dropdown style */
 select {
-  width: 100%;
-  padding: 8px;
+  width: auto; /* Change this back to auto for proper sizing */
+  min-width: 150px; /* Set a minimum width for the dropdowns to ensure options fit */
+  padding: 8px 10px; /* Maintain good padding */
   border: 1px solid #ccc;
   border-radius: 5px;
   background-color: #fff;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-  height: 30px;
+  height: 35px; /* Adjust height for visibility */
+  white-space: nowrap; /* Prevents text from wrapping */
+  overflow: hidden; /* Ensures the dropdown does not expand in height */
 }
-
 .dropdown-container .dropdown-group {
   flex: 1 1 auto;
   min-width: 200px;
@@ -108,5 +111,15 @@ h1 {
   margin: auto;
   position: relative;
   left: 0px; /* Adjust as needed to move the default image to the right */
+}
+/* Ensure print styles only show images and label */
+@media print {
+  body * {
+    display: none; /* Hide everything */
+  }
+  #imagesContainer,
+  #imageLabel { 
+    display: block; /* Show only images and label */
+  }
 }
 
