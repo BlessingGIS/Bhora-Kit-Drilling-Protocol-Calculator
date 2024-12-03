@@ -122,4 +122,8 @@ h1 {
     display: block; /* Show only images and label */
   }
 }
-
+@media (max-width: 768px) {
+    body {
+      padding: 10px; /* Reduce padding for smaller screens */
+    }
+}
