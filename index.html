@@ -22,9 +22,11 @@
     <option value="">----</option>
     <option value="Deep Conical">Deep Conical</option>
     <option value="External Hex">External Hex</option>
-    <option value="Internal Hex">Internal Hex</option>
+    <option value="Provata">Provata</option>
     <option value="Internal Octagon">Internal Octagon</option>
+    <option value="Inverta">Inverta(DC/EX HEX)</option>
     <option value="Single Platform">Single Platform</option>
+    <option value="M-Series">M-Series</option>
     <option value="Tri-Nex">Tri-Nex</option>
   </select>
 </div>
@@ -42,19 +44,22 @@
     <option value="4(DC4)">4(DC4)</option>
     <option value="5(DC5)">5(DC5)</option>
     <option value="3.3(3M)">3.3(3M)</option>
-    <option value="3.75(M)">3.75(M)</option>
     <option value="4(M)">4(M)</option>        
-    <option value="4.2(M)">4.2(M)</option>
     <option value="5(M-P45)">5(M-P45)</option>
     <option value="3.5(SP)">3.5(SP)</option>
     <option value="4(SP)">4(SP)</option>
     <option value="5(SP)">5(SP)</option>
-    <option value="3.3(ITC3)">3.3(ITC3)</option>
     <option value="4(ITT4)">4(ITT4)</option>
     <option value="5(ITT5)">5(ITT5)</option>
-    <option value="3.5(L-35)">3.5(L-35)</option>
-    <option value="4.3(L-43)">4.3(L-43)</option>
-    <option value="5(L-50)">5(L-50)</option>
+    <option value="3.5(EL-35)">3.5(L-35)</option>
+    <option value="4.3(EL-43)">4.3(L-43)</option>
+    <option value="5(EL-50)">5(L-50)</option>
+    <option value="3.7(IM-T37)">3.7(IM-T37)</option>
+    <option value="4.2(IM-T42)">4.2(IM-T42)</option>
+    <option value="5(IM-T50)">5(IM-T50)</option>
+    <option value="IV-DC30/EX30-37">IV-DC30/EX30-37</option>
+    <option value="IV-DC35/EX35-45">IV-DC35/EX35-45</option>
+    <option value="IV-DC40/EX40-50">IV-DC40/EX40-50</option> 
   </select>
 </div>       
 <div class="dropdown-group">
@@ -65,15 +70,22 @@
     <option value="8.5">8.5</option>    
     <option value="9">9</option>
     <option value="10">10</option>
+    <option value="10.5">10.5</option>
+    <option value="11">11</option>    
     <option value="11.5">11.5</option>
+    <option value="12">12</option>
     <option value="13">13</option>
-    <option value="15">15</option>                          
+    <option value="13.5">13.5</option>
+    <option value="14">14</option>
+    <option value="15">15</option>
+    <option value="16">16</option>
+    <option value="16.5">16.5</option>                              
   </select>
 </div>       
   <!-- Implant Length Dropdown -->
   <!-- Implant Selected Dropdown -->
   <div class="dropdown-group">
-    <label for="value1">Implant Selected:</label>
+    <label for="value1">Implant:</label>
     <select id="value1" name="value1" required disabled>  
     <option value="">--Auto Selected--</option>
     <option value="IP-8.5">IP-8.5</option>
@@ -96,6 +108,107 @@
     <option value="BAT-11.5">BAT-11.5</option>
     <option value="BAT-13">BAT-13</option>
     <option value="BAT-15">BAT-15</option>
+    <option value="SP3508">SP3508</option>
+    <option value="SP3510">SP3510</option>
+    <option value="SP3511">SP3511</option>
+    <option value="SP3513">SP3513</option>
+    <option value="SP3516">SP3516</option>
+    <option value="SP4008">SP4008</option>
+    <option value="SP4010">SP4010</option>
+    <option value="SP4011">SP4011</option>
+    <option value="SP4013">SP4013</option>
+    <option value="SP4016">SP4016</option>
+    <option value="SP5008">SP5008</option>
+    <option value="SP5010">SP5010</option>
+    <option value="SP5011">SP5011</option>
+    <option value="SP5013">SP5013</option>
+    <option value="SP5016">SP5016</option>
+    <option value="DCT3009">DCT3009</option>
+    <option value="DCT3011">DCT3011</option>
+    <option value="DCT3013">DCT3013</option>
+    <option value="DCT3015">DCT3015</option>
+    <option value="DCT3508">DCT3508</option>
+    <option value="DCT3509">DCT3509</option>
+    <option value="DCT3511">DCT3511</option>
+    <option value="DCT3513">DCT3513</option>
+    <option value="DCT3515">DCT3515</option>
+    <option value="DCT4008">DCT4008</option>
+    <option value="DCT4009">DCT4009</option>
+    <option value="DCT4011">DCT4011</option>
+    <option value="DCT4013">DCT4013</option>
+    <option value="DCT4015">DCT4015</option>
+    <option value="DCT5009">DCT5009</option>
+    <option value="DCT5011">DCT5011</option>
+    <option value="DCT5013">DCT5013</option>
+    <option value="DCT5015">DCT5015</option>
+    <option value="PRO308">PRO308</option>
+    <option value="PRO310">PRO310</option>
+    <option value="PRO311">PRO311</option>
+    <option value="PRO313">PRO313</option>
+    <option value="PRO315">PRO315</option>
+    <option value="PRO408">PRO408</option>
+    <option value="PRO410">PRO410</option>
+    <option value="PRO411">PRO411</option>
+    <option value="PRO413">PRO413</option>
+    <option value="PRO415">PRO415</option>
+    <option value="PRO508">PRO508</option>
+    <option value="PRO510">PRO510</option>
+    <option value="PRO511">PRO511</option>
+    <option value="PRO513">PRO513</option>
+    <option value="PRO515">PRO515</option>
+    <option value="IM-T3708">IM-T3708</option>
+    <option value="IM-T3710">IM-T3710</option>
+    <option value="IM-T3711">IM-T3711</option>
+    <option value="IM-T3713">IM-T3713</option>
+    <option value="IM-T3715">IM-T3715</option>
+    <option value="IM-T4208">IM-T4208</option>
+    <option value="IM-T4210">IM-T4210</option>
+    <option value="IM-T4211">IM-T4211</option>
+    <option value="IM-T4213">IM-T4213</option>
+    <option value="IM-T4215">IM-T4215</option>
+    <option value="IM-T5008">IM-T5008</option>
+    <option value="IM-T5010">IM-T5010</option>
+    <option value="IM-T5011">IM-T5011</option>
+    <option value="IM-T5013">IM-T5013</option>
+    <option value="IM-T5015">IM-T5015</option>
+    <option value="ITT408">ITT408</option>
+    <option value="ITT410">ITT410</option>
+    <option value="ITT412">ITT412</option>
+    <option value="ITT414">ITT414</option>
+    <option value="ITT508">ITT508</option>
+    <option value="ITT510">ITT510</option>
+    <option value="ITT512">ITT512</option>
+    <option value="ITT514">ITT514</option>
+    <option value="IA-LH-35-8">IA-LH-35-8</option>
+    <option value="IA-LH-35-10">IA-LH-35-10</option>
+    <option value="IA-LH-35-11.5">IA-LH-35-11.5</option>
+    <option value="IA-LH-35-13">IA-LH-35-13</option>
+    <option value="IA-LH-35-16">IA-LH-35-16</option>
+    <option value="IA-LH-43-8">IA-LH-43-8</option>
+    <option value="IA-LH-43-10">IA-LH-43-10</option>
+    <option value="IA-LH-43-11.5">IA-LH-43-11.5</option>
+    <option value="IA-LH-43-13">IA-LH-43-13</option>
+    <option value="IA-LH-43-16">IA-LH-43-16</option>
+    <option value="IA-LH-50-8">IA-LH-50-8</option>
+    <option value="IA-LH-50-10">IA-LH-50-10</option>
+    <option value="IA-LH-50-11.5">IA-LH-50-11.5</option>
+    <option value="IA-LH-50-13">IA-LH-50-13</option>
+    <option value="IA-LH-50-16">IA-LH-50-16</option> 
+    <option value="IV-DC30/EX30-3708">IV-DC30/EX30-3708</option>
+    <option value="IV-DC30/EX30-3710">IV-DC30/EX30-3710</option>
+    <option value="IV-DC30/EX30-3711">IV-DC30/EX30-3711</option>
+    <option value="IV-DC30/EX30-3713">IV-DC30/EX30-3713</option> 
+    <option value="IV-DC30/EX30-3715">IV-DC30/EX30-3715</option>
+    <option value="IV-DC35/EX35-4508">IV-DC35/EX35-4508</option>
+    <option value="IV-DC35/EX35-4510">IV-DC35/EX35-4510</option>
+    <option value="IV-DC35/EX35-4511">IV-DC35/EX35-4511</option>
+    <option value="IV-DC35/EX35-4513">IV-DC35/EX35-4513</option> 
+    <option value="IV-DC35/EX35-4515">IV-DC35/EX35-4515</option>
+    <option value="IV-DC40/EX40-5008">IV-DC40/EX40-5008</option>
+    <option value="IV-DC40/EX40-5010">IV-DC40/EX40-5010</option>
+    <option value="IV-DC40/EX40-5011">IV-DC40/EX40-5011</option>
+    <option value="IV-DC40/EX40-5013">IV-DC40/EX40-5013</option>
+    <option value="IV-DC40/EX40-5015">IV-DC40/EX40-5015</option>
   </select>
 </div>
   <input type="button" value="Calculate Drilling Protocol" onclick="applyConditions()">
@@ -108,26 +221,127 @@
     <img id="Kit" src="Kit.PNG" alt="Default Image" style="display: block;">
   <!-- Images Section (Initially Hidden) -->
   <div id="imagesContainer">
-    <img id="IP-8.5 Regular" src="IP-8.5 Soft.PNG" alt="IP-8.5 Regular" style="display: none;">
-    <img id="IP-10 Regular" src="IP-10 Soft.PNG" alt="IP-10 Regular" style="display: none;">   
-    <img id="IP-11.5 Regular" src="IP-11.5 Soft.PNG" alt="IP-11.5 Regular" style="display: none;">
-    <img id="IP-13 Regular" src="IP-13 Soft.PNG" alt="IP-13 Regular" style="display: none;">
-    <img id="IP-15 Regular" src="IP-15 Soft.PNG" alt="IP-15 Regular" style="display: none;">
-    <img id="IBNT-8.5 Regular" src="IBN-8.5 Soft.PNG" alt="IBNT-8.5 Regular" style="display: none;">
-    <img id="IBNT-10 Regular" src="IBN-10 Soft.PNG" alt="IBNT-10 Regular" style="display: none;">
-    <img id="IBNT-11.5 Regular" src="IBN-11.5 Soft.PNG" alt="IBNT-11.5 Regular" style="display: none;">
-    <img id="IBNT-13 Regular" src="IBN-13 Soft.PNG" alt="IBNT-13 Regular" style="display: none;"> 
-    <img id="IBNT-15 Regular" src="IBN-15 Soft.PNG" alt="IBNT-15 Regular" style="display: none;">     
-    <img id="IBT-8.5 Regular" src="IBT-8.5 Soft.PNG" alt="IBT-8.5 Regular" style="display: none;">
-    <img id="IBT-10 Regular" src="IBT-10 Soft.PNG" alt="IBT-10 Regular" style="display: none;">        
-    <img id="IBT-11.5 Regular" src="IBT-11.5 Soft.PNG" alt="IBT-11.5 Regular" style="display: none;">
-    <img id="IBT-13 Regular" src="IBT-13 Soft.PNG" alt="IBT-13 Regular" style="display: none;">
-    <img id="IBT-15 Regular" src="IBT-15 Soft.PNG" alt="IBT-15 Regular" style="display: none;">
-    <img id="BAT-8.5 Regular" src="BAT-8.5 Soft.PNG" alt="BAT-8.5 Regular" style="display: none;">
-    <img id="BAT-10 Regular" src="BAT-10 Soft.PNG" alt="BAT-10 Regular" style="display: none;">
-    <img id="BAT-11.5 Regular" src="BAT-11.5 Soft.PNG" alt="BAT-11.5 Regular" style="display: none;">
-    <img id="BAT-13 Regular" src="BAT-13 Soft.PNG" alt="BAT-13 Regular" style="display: none;">
-    <img id="BAT-15 Regular" src="BAT-15 Soft.PNG" alt="BAT-15 Regular" style="display: none;">                                                           
+    <img id="IP-8.5" src="IP-8.5.PNG" alt="IP-8.5" style="display: none;">
+    <img id="IP-10" src="IP-10.PNG" alt="IP-10" style="display: none;">   
+    <img id="IP-11.5" src="IP-11.5.PNG" alt="IP-11.5" style="display: none;">
+    <img id="IP-13" src="IP-13.PNG" alt="IP-13" style="display: none;">
+    <img id="IP-15" src="IP-15.PNG" alt="IP-15" style="display: none;">
+    <img id="IBNT-8.5" src="IBNT-8.5.PNG" alt="IBNT-8.5" style="display: none;">
+    <img id="IBNT-10" src="IBNT-10.PNG" alt="IBNT-10" style="display: none;">
+    <img id="IBNT-11.5" src="IBNT-11.5.PNG" alt="IBNT-11.5" style="display: none;">
+    <img id="IBNT-13" src="IBNT-13.PNG" alt="IBNT-13" style="display: none;"> 
+    <img id="IBNT-15" src="IBNT-15.PNG" alt="IBNT-15" style="display: none;">     
+    <img id="IBT-8.5" src="IBT-8.5.PNG" alt="IBT-8.5" style="display: none;">
+    <img id="IBT-10" src="IBT-10.PNG" alt="IBT-10" style="display: none;">        
+    <img id="IBT-11.5" src="IBT-11.5.PNG" alt="IBT-11.5" style="display: none;">
+    <img id="IBT-13" src="IBT-13.PNG" alt="IBT-13" style="display: none;">
+    <img id="IBT-15" src="IBT-15.PNG" alt="IBT-15" style="display: none;">
+    <img id="BAT-8.5" src="BAT-8.5.PNG" alt="BAT-8.5" style="display: none;">
+    <img id="BAT-10" src="BAT-10.PNG" alt="BAT-10" style="display: none;">
+    <img id="BAT-11.5" src="BAT-11.5.PNG" alt="BAT-11.5" style="display: none;">
+    <img id="BAT-13" src="BAT-13.PNG" alt="BAT-13" style="display: none;">
+    <img id="BAT-15" src="BAT-15.PNG" alt="BAT-15" style="display: none;">
+    <img id="SP3508" src="SP3508.PNG" alt="SP3508" style="display: none;">
+    <img id="SP3510" src="SP3510.PNG" alt="SP3510" style="display: none;">   
+    <img id="SP3511" src="SP3511.PNG" alt="SP3511" style="display: none;">
+    <img id="SP3513" src="SP3513.PNG" alt="SP3513" style="display: none;">
+    <img id="SP3516" src="SP3516.PNG" alt="SP3516" style="display: none;">
+    <img id="SP4008" src="SP4008.PNG" alt="SP4008" style="display: none;">
+    <img id="SP4010" src="SP4010.PNG" alt="SP4010" style="display: none;">   
+    <img id="SP4011" src="SP4011.PNG" alt="SP4011" style="display: none;">
+    <img id="SP4013" src="SP4013.PNG" alt="SP4013" style="display: none;">
+    <img id="SP4016" src="SP4016.PNG" alt="SP4016" style="display: none;">  
+    <img id="SP5008" src="SP5008.PNG" alt="SP5008" style="display: none;">
+    <img id="SP5010" src="SP5010.PNG" alt="SP5010" style="display: none;">   
+    <img id="SP5011" src="SP5011.PNG" alt="SP5011" style="display: none;">
+    <img id="SP5013" src="SP5013.PNG" alt="SP5013" style="display: none;">
+    <img id="SP5016" src="SP5016.PNG" alt="SP5016" style="display: none;">
+    <img id="DCT3009" src="DCT3009.PNG" alt="DCT3009" style="display: none;">
+    <img id="DCT3011" src="DCT3011.PNG" alt="DCT3011" style="display: none;">
+    <img id="DCT3013" src="DCT3013.PNG" alt="DCT3013" style="display: none;">
+    <img id="DCT3015" src="DCT3015.PNG" alt="DCT3015" style="display: none;">
+    <img id="DCT3508" src="DCT3508.PNG" alt="DCT3508" style="display: none;"> 
+    <img id="DCT3509" src="DCT3509.PNG" alt="DCT3509" style="display: none;">
+    <img id="DCT3511" src="DCT3511.PNG" alt="DCT3511" style="display: none;">
+    <img id="DCT3513" src="DCT3513.PNG" alt="DCT3513" style="display: none;">
+    <img id="DCT3515" src="DCT3515.PNG" alt="DCT3515" style="display: none;"> 
+    <img id="DCT4008" src="DCT4008.PNG" alt="DCT4008" style="display: none;">
+    <img id="DCT4009" src="DCT4009.PNG" alt="DCT4009" style="display: none;">
+    <img id="DCT4011" src="DCT4011.PNG" alt="DCT4011" style="display: none;">
+    <img id="DCT4013" src="DCT4013.PNG" alt="DCT4013" style="display: none;">
+    <img id="DCT4015" src="DCT4015.PNG" alt="DCT4015" style="display: none;">
+    <img id="DCT5009" src="DCT5009.PNG" alt="DCT5009" style="display: none;">
+    <img id="DCT5011" src="DCT5011.PNG" alt="DCT5011" style="display: none;">
+    <img id="DCT5013" src="DCT5013.PNG" alt="DCT5013" style="display: none;">
+    <img id="DCT5015" src="DCT5015.PNG" alt="DCT5015" style="display: none;">   
+    <img id="PRO308" src="PRO308.PNG" alt="PRO308" style="display: none;">
+    <img id="PRO310" src="PRO310.PNG" alt="PRO310" style="display: none;"> 
+    <img id="PRO311" src="PRO311.PNG" alt="PRO311" style="display: none;">
+    <img id="PRO313" src="PRO313.PNG" alt="PRO313" style="display: none;">
+    <img id="PRO315" src="PRO315.PNG" alt="PRO315" style="display: none;">
+    <img id="PRO408" src="PRO408.PNG" alt="PRO408" style="display: none;">
+    <img id="PRO410" src="PRO410.PNG" alt="PRO410" style="display: none;"> 
+    <img id="PRO411" src="PRO411.PNG" alt="PRO411" style="display: none;">
+    <img id="PRO413" src="PRO413.PNG" alt="PRO413" style="display: none;">
+    <img id="PRO415" src="PRO415.PNG" alt="PRO415" style="display: none;">
+    <img id="PRO508" src="PRO508.PNG" alt="PRO508" style="display: none;">
+    <img id="PRO510" src="PRO510.PNG" alt="PRO510" style="display: none;"> 
+    <img id="PRO511" src="PRO511.PNG" alt="PRO511" style="display: none;">
+    <img id="PRO513" src="PRO513.PNG" alt="PRO513" style="display: none;">
+    <img id="PRO515" src="PRO515.PNG" alt="PRO515" style="display: none;">
+    <img id="IM-T3708" src="IM-T3708.PNG" alt="IM-T3708" style="display: none;">
+    <img id="IM-T3710" src="IM-T3710.PNG" alt="IM-T3710" style="display: none;">
+    <img id="IM-T3711" src="IM-T3711.PNG" alt="IM-T3711" style="display: none;">
+    <img id="IM-T3713" src="IM-T3713.PNG" alt="IM-T3713" style="display: none;">
+    <img id="IM-T3715" src="IM-T3715.PNG" alt="IM-T3715" style="display: none;">
+    <img id="IM-T4208" src="IM-T4208.PNG" alt="IM-T4208" style="display: none;">
+    <img id="IM-T4210" src="IM-T4210.PNG" alt="IM-T4210" style="display: none;">
+    <img id="IM-T4211" src="IM-T4211.PNG" alt="IM-T4211" style="display: none;">
+    <img id="IM-T4213" src="IM-T4213.PNG" alt="IM-T4213" style="display: none;">
+    <img id="IM-T4215" src="IM-T4215.PNG" alt="IM-T4215" style="display: none;">
+    <img id="IM-T5008" src="IM-T5008.PNG" alt="IM-T5008" style="display: none;">
+    <img id="IM-T5010" src="IM-T5010.PNG" alt="IM-T5010" style="display: none;">
+    <img id="IM-T5011" src="IM-T5011.PNG" alt="IM-T5011" style="display: none;">
+    <img id="IM-T5013" src="IM-T5013.PNG" alt="IM-T5013" style="display: none;">
+    <img id="IM-T5015" src="IM-T5015.PNG" alt="IM-T5015" style="display: none;">
+    <img id="ITT408" src="ITT408.PNG" alt="ITT408" style="display: none;">
+    <img id="ITT410" src="ITT410.PNG" alt="ITT410" style="display: none;">
+    <img id="ITT412" src="ITT412.PNG" alt="ITT412" style="display: none;">
+    <img id="ITT414" src="ITT414.PNG" alt="ITT414" style="display: none;">
+    <img id="ITT508" src="ITT508.PNG" alt="ITT508" style="display: none;">
+    <img id="ITT510" src="ITT510.PNG" alt="ITT510" style="display: none;">
+    <img id="ITT512" src="ITT512.PNG" alt="ITT512" style="display: none;">
+    <img id="ITT514" src="ITT514.PNG" alt="ITT514" style="display: none;">
+    <img id="IA-LH-35-8" src="IA-LH-35-8.PNG" alt="IA-LH-35-8" style="display: none;">
+    <img id="IA-LH-35-10" src="IA-LH-35-10.PNG" alt="IA-LH-35-10" style="display: none;">
+    <img id="IA-LH-35-11.5" src="IA-LH-35-11.5.PNG" alt="IA-LH-35-11.5" style="display: none;"> 
+    <img id="IA-LH-35-13" src="IA-LH-35-13.PNG" alt="IA-LH-35-13" style="display: none;">
+    <img id="IA-LH-35-16" src="IA-LH-35-16.PNG" alt="IA-LH-35-16" style="display: none;">
+    <img id="IA-LH-43-8" src="IA-LH-43-8.PNG" alt="IA-LH-43-8" style="display: none;">
+    <img id="IA-LH-43-10" src="IA-LH-43-10.PNG" alt="IA-LH-43-10" style="display: none;">
+    <img id="IA-LH-43-11.5" src="IA-LH-43-11.5.PNG" alt="IA-LH-43-11.5" style="display: none;"> 
+    <img id="IA-LH-43-13" src="IA-LH-43-13.PNG" alt="IA-LH-43-13" style="display: none;">
+    <img id="IA-LH-43-16" src="IA-LH-43-16.PNG" alt="IA-LH-43-16" style="display: none;">
+    <img id="IA-LH-50-8" src="IA-LH-50-8.PNG" alt="IA-LH-50-8" style="display: none;">
+    <img id="IA-LH-50-10" src="IA-LH-50-10.PNG" alt="IA-LH-50-10" style="display: none;">
+    <img id="IA-LH-50-11.5" src="IA-LH-50-11.5.PNG" alt="IA-LH-50-11.5" style="display: none;"> 
+    <img id="IA-LH-50-13" src="IA-LH-50-13.PNG" alt="IA-LH-50-13" style="display: none;">
+    <img id="IA-LH-50-16" src="IA-LH-50-16.PNG" alt="IA-LH-50-16" style="display: none;">
+    <img id="IV-DC30/EX30-3708" src="IV-DC30-3708.PNG" alt="IV-DC30/EX30-3708" style="display: none;">
+    <img id="IV-DC30/EX30-3710" src="IV-DC30-3710.PNG" alt="IV-DC30/EX30-3710" style="display: none;">
+    <img id="IV-DC30/EX30-3711" src="IV-DC30-3711.PNG" alt="IV-DC30/EX30-3711" style="display: none;">
+    <img id="IV-DC30/EX30-3713" src="IV-DC30-3713.PNG" alt="IV-DC30/EX30-3713" style="display: none;">  
+    <img id="IV-DC30/EX30-3715" src="IV-DC30-3715.PNG" alt="IV-DC30/EX30-3715" style="display: none;">
+    <img id="IV-DC35/EX35-4508" src="IV-DC35-4508.PNG" alt="IV-DC35/EX35-4508" style="display: none;">
+    <img id="IV-DC35/EX35-4510" src="IV-DC35-4510.PNG" alt="IV-DC35/EX35-4510" style="display: none;">
+    <img id="IV-DC35/EX35-4511" src="IV-DC35-4511.PNG" alt="IV-DC35/EX35-4511" style="display: none;">
+    <img id="IV-DC35/EX35-4513" src="IV-DC35-4513.PNG" alt="IV-DC35/EX35-4513" style="display: none;">
+    <img id="IV-DC35/EX35-4515" src="IV-DC35-4515.PNG" alt="IV-DC35/EX35-4515" style="display: none;">
+    <img id="IV-DC40/EX40-5008" src="IV-DC40-5008.PNG" alt="IV-DC40/EX40-5008" style="display: none;">
+    <img id="IV-DC40/EX40-5010" src="IV-DC40-5010.PNG" alt="IV-DC40/EX40-5010" style="display: none;">
+    <img id="IV-DC40/EX40-5011" src="IV-DC40-5011.PNG" alt="IV-DC40/EX40-5011" style="display: none;">
+    <img id="IV-DC40/EX40-5013" src="IV-DC40-5013.PNG" alt="IV-DC40/EX40-5013" style="display: none;">
+    <img id="IV-DC40/EX40-5015" src="IV-DC40-5015.PNG" alt="IV-DC40/EX40-5015" style="display: none;">
   <!-- Print Button, initially hidden -->
   <input type="button" id="printButton" value="Print Protocol" style="display: none; position: absolute; right: 10px; bottom: 10px;" onclick="printImage()">
 </div>
