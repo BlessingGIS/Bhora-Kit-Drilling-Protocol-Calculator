@@ -135,4 +135,26 @@ h1 {
     margin: auto; /* Center the image horizontally */
     object-fit: contain; /* Maintain aspect ratio */
   }
+/* Mobile-specific adjustments for #imagesContainer */
+@media (max-width: 768px) {
+  #imagesContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto; /* Allow the container to resize dynamically */
+    overflow: hidden; /* Prevent unnecessary scrolling */
+  }
+
+  #imagesContainer img {
+    max-width: 100%; /* Ensure the image fits within the screen width */
+    max-height: 50vh; /* Keep the height relative to the viewport height */
+    object-fit: contain; /* Maintain the aspect ratio */
+    display: none; /* Images stay hidden by default */
+  }
+
+  #Kit {
+    display: block; /* Ensure the default image is visible */
+    margin: auto; /* Keep the default image centered */
+  }
+}  
 }
