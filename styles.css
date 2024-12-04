@@ -142,7 +142,7 @@ h1 {
     align-items: center;
     justify-content: center;
     height: auto; /* Allow the container to resize dynamically */
-    overflow: hidden; /* Prevent unnecessary scrolling */
+    overflow: visible; /* Prevent unnecessary scrolling */
   }
 
   #imagesContainer img {
