@@ -1,3 +1,4 @@
+/* General Styles */
 body {
   font-family: Arial, sans-serif;
   padding: 20px;
@@ -32,22 +33,18 @@ body {
   margin-bottom: 0px;
 }
 
-/* Dropdown style */
+/* Dropdown Style */
 select {
-  width: auto; /* Change this back to auto for proper sizing */
-  min-width: 150px; /* Set a minimum width for the dropdowns to ensure options fit */
-  padding: 8px 10px; /* Maintain good padding */
+  width: auto; /* Adjust for dynamic sizing */
+  min-width: 150px; /* Ensure dropdown is readable */
+  padding: 8px 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
   background-color: #fff;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-  height: 35px; /* Adjust height for visibility */
-  white-space: nowrap; /* Prevents text from wrapping */
-  overflow: hidden; /* Ensures the dropdown does not expand in height */
-}
-.dropdown-container .dropdown-group {
-  flex: 1 1 auto;
-  min-width: 200px;
+  height: 35px;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 input[type="button"] {
@@ -66,13 +63,6 @@ input[type="button"]:hover {
   background-color: #0d1aa6;
 }
 
-select[style*="visibility: hidden"] {
-  width: 0;
-  height: 0;
-  padding: 0;
-  border: none;
-}
-
 #logo {
   width: 400px;
   height: auto;
@@ -82,79 +72,55 @@ h1 {
   color: #0f1cdd;
   text-align: center;
 }
+
 #imageLabel {
   text-align: center;
-  color: #2200ffed; /* Change color to red, or any preferred color */
-  font-size: 1.1em; /* Adjust size if needed */
-  margin-top: 10px; /* Adds space above the label */
-  margin-bottom: 10px; /* Adds space below the label */
+  color: #2200ffed; /* Adjust color */
+  font-size: 1.1em;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
+
 #imagesContainer {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 50vh; /* Ensure images container fits within the viewport */
-  overflow: hidden; /* Prevent overflow to avoid scrolling */
+  height: 50vh;
+  overflow: hidden; /* Prevent unnecessary scrollbars */
 }
 
 #imagesContainer img {
   max-width: 100%;
   max-height: 100%;
   margin: 0;
-  display: none;
-  object-fit: contain; /* Scale image to fit without stretching */
-  position: relative;
+  display: none; /* Ensure images are hidden initially */
+  object-fit: contain; /* Fit images within container */
 }
 
 #Kit {
   display: block;
   margin: auto;
   position: relative;
-  left: 0px; /* Adjust as needed to move the default image to the right */
+  left: 0; /* Center the default image */
 }
-/* Ensure print styles only show images and label */
-@media print {
-  body * {
-    display: none; /* Hide everything */
-  }
-  #imagesContainer,
-  #imageLabel { 
-    display: block; /* Show only images and label */
-  }
-}
-@media (max-width: 768px) {
-  body {
-    padding: 10px; /* Reduce padding for smaller screens */
-  }
 
-  /* Ensure images other than Kit.png display like Kit.png on mobile */
-  #imagesContainer img {
-    display: block !important; /* Ensure the image is displayed */
-    max-width: 100%; /* Maintain full width on smaller screens */
-    height: auto; /* Adjust height proportionally */
-    margin: auto; /* Center the image horizontally */
-    object-fit: contain; /* Maintain aspect ratio */
-  }
-/* Mobile-specific adjustments for #imagesContainer */
+/* Mobile View - Specific Adjustments */
 @media (max-width: 768px) {
   #imagesContainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: auto; /* Allow the container to resize dynamically */
-    overflow: visible; /* Prevent unnecessary scrolling */
+    height: auto; /* Allow dynamic height */
+    margin-top: 10px; /* Add spacing for smaller screens */
   }
 
   #imagesContainer img {
-    max-width: 100%; /* Ensure the image fits within the screen width */
-    max-height: 50vh; /* Keep the height relative to the viewport height */
-    object-fit: contain; /* Maintain the aspect ratio */
-    display: none; /* Ensure all images are hidden by default */
+    display: none; /* Hide all images initially */
+    max-width: 90%; /* Scale images properly */
+    height: auto; /* Maintain aspect ratio */
+    margin: auto; /* Center images */
   }
 
   #Kit {
-    display: block; /* Ensure the default image is visible */
-    margin: auto; /* Keep the default image centered */
+    max-width: 90%; /* Ensure the default image scales properly */
+    height: auto; /* Maintain aspect ratio */
+    margin: auto;
   }
-} 
 }
