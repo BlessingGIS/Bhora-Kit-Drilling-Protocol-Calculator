@@ -108,14 +108,16 @@ h1 {
 @media (max-width: 768px) {
   #imagesContainer {
     height: auto; /* Allow dynamic height */
-    margin-top: 10px; /* Add spacing for smaller screens */
+    margin-top: 10px;
+    overflow: visible; /* Add spacing for smaller screens */
   }
 
   #imagesContainer img {
     display: none; /* Hide all images initially */
-    max-width: 90%; /* Scale images properly */
+    max-width: 100%; /* Scale images properly */
     height: auto; /* Maintain aspect ratio */
-    margin: auto; /* Center images */
+    margin: auto;
+    object-fit: contain; /* Center images */
   }
 
   #Kit {
